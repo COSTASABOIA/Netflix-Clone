@@ -1,0 +1,65 @@
+header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+
+header.Header{
+    background: #141414;
+}
+
+.header--logo{
+    height: 25px;
+}
+
+.header--logo img{
+    height: 100%;
+}
+
+.header--user{
+    height: 50px;
+}
+
+.header--user img{
+    height: 100%;
+    border-radius: 3px;
+}
+
+.movieRow--left,
+.movieRow--right{
+    position: absolute;
+    width: 40px;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.4s;
+
+}
+
+.movieRow--left{
+    left: 0;
+}
+
+.movieRow--right{
+    right: 0;
+}
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right{
+    opacity: 1;
+}
+
